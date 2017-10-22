@@ -18,6 +18,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import java.io.IOException;
 
@@ -26,6 +27,7 @@ public class createPlaceDialog extends DialogFragment implements View.OnClickLis
     private EditText edit;
     private Communicator communicator;
     private Typeface tf;
+    private TextView entry;
 
     public void onAttach(Activity activity){
         super.onAttach(activity);
@@ -33,6 +35,16 @@ public class createPlaceDialog extends DialogFragment implements View.OnClickLis
     }
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View view = inflater.inflate(R.layout.fragment_create_place_dialog, null);
+
+        tf = Typeface.createFromAsset(getActivity().getApplicationContext().getAssets(), "Fonts/mainFont.ttf");
+        entry = getActivity().findViewById(R.id.editNewCat);
+        entry.setTypeface(tf);
+        cancel = (Button) getActivity().findViewById(R.id.cancelButton);
+        setNew = (Button) getActivity().findViewById(R.id.setPlaceButton);
+        cancel.setTypeface(tf);
+        setNew.setTypeface(tf);
+        cancel.setTextColor(Color.WHITE);
+        setNew.setTextColor(Color.WHITE);
 
         setCancelable(false);
         return view;

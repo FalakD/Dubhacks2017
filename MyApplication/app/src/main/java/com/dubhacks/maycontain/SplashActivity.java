@@ -14,7 +14,11 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.google.firebase.auth.FirebaseAuth;
+
+import java.util.Locale;
 import java.util.Random;
+
+import static android.R.attr.typeface;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -23,10 +27,15 @@ public class SplashActivity extends AppCompatActivity {
     private Button dashboardBtn;
     private AssetManager assetManager;
     private TextView view;
+    private Typeface tf;
+    private TextView title;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        tf = Typeface.createFromAsset(getAssets(), "Fonts/mainFont.ttf");
+        title = (TextView) findViewById(R.id.mainAppTitle);
+        title.setTypeface(tf);
         firebaseAuth = FirebaseAuth.getInstance();
         dashboardBtn = (Button) findViewById(R.id.dashboard);
         dashboardBtn.setOnClickListener(new View.OnClickListener() {

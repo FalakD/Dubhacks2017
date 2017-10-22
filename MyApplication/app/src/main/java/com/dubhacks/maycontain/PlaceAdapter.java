@@ -29,6 +29,7 @@ public class PlaceAdapter extends BaseAdapter implements ListAdapter {
     private EditPlaceDialog dialogEdit;
     private FragmentActivity activity;
     private FragmentManager manager;
+    private Typeface tf;
 
     public PlaceAdapter(List list, Context c){
         categories = list;
@@ -63,6 +64,8 @@ public class PlaceAdapter extends BaseAdapter implements ListAdapter {
 
         final TextView listItem = (TextView) v.findViewById(R.id.list_item_string);
         listItem.setText(categories.get(i).toString());
+        tf = Typeface.createFromAsset(context.getAssets(), "Fonts/mainFont.ttf");
+        listItem.setTypeface(tf);
 
         ImageButton editName = (ImageButton) v.findViewById(R.id.edit_btn);
         ImageButton deleteCat = (ImageButton) v.findViewById(R.id.delete_btn);

@@ -22,13 +22,11 @@ public class HomepageActivity extends AppCompatActivity {
                     mTextMessage.setText(R.string.title_home);
                     startActivity(new Intent(HomepageActivity.this, HomepageActivity.class));
                     return true;
-                case R.id.navigation_dashboard:
+                case R.id.navigation_saved:
                     startActivity(new Intent(HomepageActivity.this, SavedActivity.class));
-                    mTextMessage.setText("Saved");
                     return true;
-                case R.id.navigation_notifications:
+                case R.id.navigation_search:
                     startActivity(new Intent(HomepageActivity.this, SearchActivity.class));
-                    mTextMessage.setText("Search");
                     return true;
             }
             return false;
@@ -41,7 +39,6 @@ public class HomepageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
 
-        mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }

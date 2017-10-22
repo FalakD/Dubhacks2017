@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context="com.dubhacks.maycontain.createPlaceDialog">
+    tools:context="com.dubhacks.maycontain.createPlaceDialog"
+    android:background="@color/Fragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -43,7 +44,7 @@
                 android:layout_marginRight="10dp"/>
 
             <Button
-                android:id="@+id/setCatButton"
+                android:id="@+id/setPlaceButton"
                 android:layout_width="163dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="0dp"
