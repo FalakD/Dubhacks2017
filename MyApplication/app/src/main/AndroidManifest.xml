@@ -21,7 +21,8 @@
             android:label="@string/title_activity_homepage" />
         <activity android:name=".SavedActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".SearchActivity"></activity>
     </application>
 
 </manifest>

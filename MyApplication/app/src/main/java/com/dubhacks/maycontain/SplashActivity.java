@@ -28,6 +28,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         firebaseAuth = FirebaseAuth.getInstance();
+        dashboardBtn = (Button) findViewById(R.id.dashboard);
         dashboardBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
