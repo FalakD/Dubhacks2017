@@ -37,16 +37,16 @@ public class createPlaceDialog extends DialogFragment implements View.OnClickLis
         View view = inflater.inflate(R.layout.fragment_create_place_dialog, null);
 
         tf = Typeface.createFromAsset(getActivity().getApplicationContext().getAssets(), "Fonts/mainFont.ttf");
-        entry = getActivity().findViewById(R.id.editNewCat);
-        entry.setTypeface(tf);
-        cancel = (Button) getActivity().findViewById(R.id.cancelButton);
-        setNew = (Button) getActivity().findViewById(R.id.setPlaceButton);
-        cancel.setTypeface(tf);
-        setNew.setTypeface(tf);
-        cancel.setTextColor(Color.WHITE);
-        setNew.setTextColor(Color.WHITE);
+        //entry = getActivity().findViewById(R.id.editNewCat);
+        //entry.setTypeface(tf);
+        //cancel = (Button) getActivity().findViewById(R.id.cancelButton);
+        //setNew = (Button) getActivity().findViewById(R.id.setPlaceButton);
+        //cancel.setTypeface(tf);
+        //setNew.setTypeface(tf);
+        // cancel.setTextColor(Color.WHITE);
+        //setNew.setTextColor(Color.WHITE);
 
-        setCancelable(false);
+        setCancelable(true);
         return view;
     }
 
