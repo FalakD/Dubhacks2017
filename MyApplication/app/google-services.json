@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "673758036260",
+    "firebase_url": "https://maycontain-60834.firebaseio.com",
+    "project_id": "maycontain-60834",
+    "storage_bucket": "maycontain-60834.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673758036260:android:9d2c2dafb6550856",
+        "android_client_info": {
+          "package_name": "com.dubhacks.maycontain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673758036260-rrg4upefmvrk3lgta7i5b0j9h6ekr2cd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxImPOzfy8uk0lw2rpsV3GU8d8FF032eM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
