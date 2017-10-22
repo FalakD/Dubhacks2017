@@ -51,7 +51,6 @@ public class createPlaceDialog extends DialogFragment implements View.OnClickLis
                 e.printStackTrace();
             }
             dismiss();
-
         }
     }
 

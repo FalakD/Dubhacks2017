@@ -22,8 +22,9 @@
 
         <ListView
             android:id="@+id/listSavedRestaurants"
-            android:layout_width="match_parent"
-            android:layout_height="348dp" />
+            android:layout_width="wrap_content"
+            android:layout_height="348dp"
+            android:layout_weight="0.74" />
 
         <Button
             android:id="@+id/addPlace"
