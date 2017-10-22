@@ -58,6 +58,7 @@ public class SavedActivity extends AppCompatActivity implements createPlaceDialo
 
         savedTitle = (TextView) findViewById(R.id.titleSavedPage);
         tf = Typeface.createFromAsset(getAssets(), "Fonts/mainFont.ttf");
+        savedTitle.setTypeface(tf);
 
         places = new ArrayList<>();
         places.add("Olive Garden");
@@ -79,7 +80,9 @@ public class SavedActivity extends AppCompatActivity implements createPlaceDialo
         list.setOnItemClickListener(new ListView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
+                Intent intent = new Intent(SavedActivity.this, PlaceInfoActivity.class);
+                intent.putExtra(places.get(i), "placeName");
+                startActivity(intent);
             }
         });
     }

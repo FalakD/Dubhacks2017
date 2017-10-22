@@ -37,7 +37,8 @@
             android:layout_width="272dp"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"/>
 
         <TextView
             android:id="@+id/route"
