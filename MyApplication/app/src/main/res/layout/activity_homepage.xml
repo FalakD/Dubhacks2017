@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.dubhacks.maycontain.HomepageActivity">
+    tools:context="com.dubhacks.maycontain.HomepageActivity"
+    android:background="@color/colorAccent">
 
     <FrameLayout
         android:id="@+id/content"
@@ -14,15 +15,20 @@
         android:layout_height="0dp"
         android:layout_weight="1">
 
-        <TextView
-            android:id="@+id/message"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:layout_marginRight="@dimen/activity_horizontal_margin"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:text="@string/title_home" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/myProfileBtn"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:text="My Profile"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
 
         <ListView
             android:layout_width="match_parent"

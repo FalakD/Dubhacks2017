@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <color name="colorPrimary">#79be7f</color>
     <color name="colorPrimaryDark">#4223a5</color>
     <color name="colorAccent">#00c11576</color>
+=======
+    <color name="colorPrimary">#93E1D8</color>
+    <color name="colorPrimaryDark">#462255</color>
+    <color name="colorAccent">#DDFFF7</color>
+    <color name="colorMainScreen">#AA4465</color>
+    <color name="Fragment">#FFB6B5</color>
+
+>>>>>>> 905026215d32510f1ac771f4e56d73ad80a13889
 </resources>

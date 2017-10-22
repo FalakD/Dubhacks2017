@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/allergens_milk"
+        android:title="Milk"
+        />
+    <item
+        android:id="@+id/allergens_soy"
+        android:title="Soy"
+        />
+    <item
+        android:id="@+id/allergens_eggs"
+        android:title="Eggs"
+        />
+    <item
+        android:id="@+id/allergens_peanuts"
+        android:title="Peanuts"
+        />
+    <item
+        android:id="@+id/allergens_treenuts"
+        android:title="Tree Nuts"
+        />
+    <item
+        android:id="@+id/allergens_wheat"
+        android:title="Wheat"
+        />
+    <item
+        android:id="@+id/allergens_fish"
+        android:title="Fish"
+        />
+    <item
+        android:id="@+id/allergens_shellfish"
+        android:title="Shellfish"
+        />
+</menu>

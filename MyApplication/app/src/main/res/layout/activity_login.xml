@@ -43,8 +43,13 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_margin="16dp"
+<<<<<<< HEAD
             android:background="@color/colorAccent"
             android:text="Login" />
+=======
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"/>
+>>>>>>> 905026215d32510f1ac771f4e56d73ad80a13889
 
         <TextView
             android:id="@+id/route"

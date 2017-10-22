@@ -21,7 +21,15 @@
             android:label="@string/title_activity_homepage" />
         <activity android:name=".SavedActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".PlaceInfoActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCHSmgCI0fQE2Trb0Tu5pm7aQgbcL6Tzrw" />
+
+        <activity android:name=".ProfileActivity"></activity>
     </application>
 
 </manifest>
